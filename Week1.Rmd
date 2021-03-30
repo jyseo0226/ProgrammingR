@@ -1,0 +1,42 @@
+---
+title: "Week1"
+author: "Jinyoung Seo"
+date: "3/29/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Week 1
+
+```{r}
+getwd()
+dir()
+#read.csv("mydata.csv")
+
+```
+- Get working directory and files in the working directory
+```{r}
+#myfunction()
+
+source("mycode.R")
+ls()
+objects()
+```
+
+- ls and objects gives the list of objects in the environment
+
+
+```{r}
+second(4)
+
+
+remove(a)
+
+
+```
+
+
+

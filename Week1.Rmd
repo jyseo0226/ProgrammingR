@@ -300,7 +300,9 @@ x[1,2,drop=TRUE] # Hence, it's a vector of length 1
 x[1,2,drop=FALSE] # Hence, it's a 1x1 matrix
 x[1, ]
 x[1, ,drop=FALSE]
-
+read.csv("hw1_data.csv")
+data[data[,1]>31,][data[,4]>90,]
+mean(data[data[,"Month"]==6,][,"Temp"],na.rm = TRUE)
 ```
 
 ### Partial matching

@@ -1,0 +1,56 @@
+---
+title: "Week2"
+author: "Jinyoung Seo"
+date: "4/6/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+### Control structures
+### If-else
+```{r}
+if(condition){
+} else if(condition2){
+} else {
+}
+
+## Generate a uniform random number x <- runif(1, 0, 10) if(x > 3) {
+
+y <- 10 } else {
+
+y <- 0 }
+```
+
+### For loop
+```{r}
+x <- c("a", "b", "c", "d")
+for(i in 1:4) {
+## Print out each element of 'x' 
+print(x[i])
+}
+
+# The seq_along() function is commonly used in conjunction with for loops in order to generate an integer sequence based on the length of an object (in this case, the object x).
+
+for(i in seq_along(x)) {
+  print(x[i])
+}
+
+# It is not necessary to use an index-type variable.
+for(my_index in x ){
+  print(my_index)
+}
+
+# For one line loops, the curly braces are not strictly necessary.
+for(i in 1:4) print(x[i])
+
+# Nested for loop
+x <- matrix(1:6, 2, 3)
+
+for(i in seq_len(nrow(x))) { 
+  for(j in seq_len(ncol(x))) { 
+    print(x[i, j])
+  } 
+  }
+```
